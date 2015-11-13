@@ -1,0 +1,81 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+font-family: 'Arvo', serif;
+color: black;
+}
+
+header {
+  background-image: url("../images/wood.jpg");
+  background-size: cover;
+}
+
+.widths span {
+  display: block;
+}
+
+.widthb {
+  width: 13em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tour {
+  background-color: #dbd5d5
+}
+
+.price {
+  background-color: #f2f2f2;
+}
+
+.nav {
+	display: none;
+}
+
+.nav-check:checked ~ .nav {
+	display: block;
+}
+
+.nav-check {
+	/* Put the checkbox off the top of the screen */
+	position: absolute;
+	top: -3em;
+}
+
+.nav-check:checked ~ .nav-label {
+	background-color: grey;
+}
+
+@media only screen and (min-width: 29em) {
+
+  .widthb {
+    width: 20em;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  .widthb {
+    width: 25em;
+  }
+
+}
+
+@media only screen and (min-width: 50em) {
+
+  .widthb {
+    width: 40em;
+  }
+
+@media only screen and (min-width: 62em) {
+
+  .widths span {
+    display: inline-block;
+  }
+
+}
