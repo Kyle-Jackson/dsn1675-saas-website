@@ -15,12 +15,18 @@
 </head>
 
 <body>
+
+<ul class="skip-links">
+  <li><a href="#">Skip to main content</a></li>
+  <li><a href="#">Skip to navigation</a></li>
+</ul>
+
 <header class="masthead grid grid-middle text-center white">
     <div class="unit">
     <input type="checkbox" class="nav-check" id="nav-check">
   	<!-- This is the button we’d click to open/close the navigation -->
   	<label class="nav-label island-1-2" for="nav-check">Menu</label>
-  	<nav class="nav">
+  	<nav class="nav" id="nav">
       <ul class="list-group text-left">
         <li><a class="island-1-2 pad-b 1-2" href="index.html">Home</a></li>
         <li><a class="island-1-2 pad-b 1-2" href="tour.html">Tour</a></li>
@@ -31,7 +37,7 @@
   </div>
     <div class="unit xs-1 s-1 m-1 l-1 pad-b-2">
       <div class="widths center">
-        <h1 class="pad-t-2 unit-m-tera">
+        <h1 class="pad-t-2 unit-m-tera" role="banner">
           <span>CREATE.</span>
           <span>COOK.</span>
           <span>SHARE.</span>
@@ -44,7 +50,7 @@
     </div>
 </header>
 
-<main class="grid grid-middle">
+<main class="grid grid-middle" id="main" role="main">
   <div class="tour unit xs-1 s-1 m-1 l-1 island gutter">
     <div>
       <h2 class="giga text-center">What is it?</h2>
@@ -75,6 +81,9 @@
     <div class="text-center">
       <a href="#" class="btn white center">Get Cooking</a>
     </div>
+  </div>
+  <div class="unit" role="contentinfo">
+    <p>© 2015 SAAS
   </div>
 </footer>
 
