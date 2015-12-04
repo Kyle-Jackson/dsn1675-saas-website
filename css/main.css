@@ -12,6 +12,7 @@ color: black;
 header {
   background-image: url("../images/wood.jpg");
   background-size: cover;
+  background-color: #000;
 }
 
 .widths span {
@@ -52,11 +53,11 @@ header {
 
 a {
   text-decoration: none;
-  color: white;
+  color: #fff;
 }
 
-h1 {
-
+a:focus {
+  outline: 3px solid black;
 }
 
 @media only screen and (min-width: 29em) {

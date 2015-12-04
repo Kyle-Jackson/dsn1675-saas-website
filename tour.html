@@ -21,12 +21,12 @@
   <li><a href="#nav">Skip to navigation</a></li>
 </ul>
 
-  <header class="masthead grid grid-middle text-center white">
+  <header id="top" class="masthead grid grid-middle text-center white">
       <div class="unit">
       <input type="checkbox" class="nav-check" id="nav-check">
     	<!-- This is the button we’d click to open/close the navigation -->
     	<label class="nav-label island-1-2" for="nav-check">Menu</label>
-    	<nav class="nav role="navigation"">
+    	<nav class="nav" id="nav" role="navigation">
         <ul class="list-group text-left">
           <li><a class="island-1-2 pad-b 1-2" href="index.html">Home</a></li>
           <li><a class="island-1-2 pad-b 1-2" href="tour.html">Tour</a></li>
@@ -38,13 +38,13 @@
   </header>
     <main class="grid grid-middle black" id="main" role="main">
       <h1 class="unit xs-1 s-1 m-1 l-1 xl-1 tera gutter text-center pad-t-1-2">Take a Tour</h1>
+          <div class="unit island">
+            <a href="payment.html" class="btn white text-center">Sign Up Now!</a>
+        </div>
       <div class="tour unit xs-1 s-1 m-1 l-1-2 island gutter">
         <div>
           <h2 class="giga text-center">Build Your Collection</h2>
           <p class="text-left">Build your own collection of recipies by the saving recipies you like to your own cookbook to make anytime you like.</p>
-        </div>
-        <div class="text-center">
-          <a href="payment.html" class="btn white center">Sign Up Now!</a>
         </div>
       </div>
 
@@ -53,9 +53,6 @@
           <h2 class="giga text-center">Discover Something New</h2>
           <p class="text-left">Browse through other user’s public cookbooks and find new and unique recipies for you to make and try yourself.</p>
         </div>
-        <div class="text-center">
-          <a href="payment.html" class="btn white center">Sign Up Now!</a>
-        </div>
       </div>
 
       <div class="tour unit xs-1 s-1 m-1 l-1-2 island gutter">
@@ -63,18 +60,12 @@
           <h2 class="giga text-center">Make Your's Unique</h2>
           <p class="text-left">Customize the colour, fonts, and layout of your cookbook. Organize the recipies in your cookbook anyway you like.</p>
         </div>
-        <div class="text-center">
-          <a href="payment.html" class="btn white center">Sign Up Now!</a>
-        </div>
       </div>
 
       <div class="price unit xs-1 s-1 m-1 l-1-2 island gutter">
         <div>
           <h2 class="giga text-center">Show Off Your Skills</h2>
           <p class="text-left">Upload and share any of your own recipies you've created for other users to download, use, and comment on.</p>
-        </div>
-        <div class="text-center">
-          <a href="payment.html" class="btn white center">Sign Up Now!</a>
         </div>
       </div>
     </main>
@@ -86,11 +77,11 @@
           <p class="text-left">Sign up now and begin cooking today!</p>
         </div>
         <div class="text-center">
-          <a href="payment.html" class="btn white center">Get Cooking</a>
+          <a href="payment.html" aria-label="Sign-Up now and get cooking" class="btn white center">Get Cooking</a>
         </div>
       </div>
       <div class="unit" role="contentinfo">
-        <p>© 2015 SAAS
+        <p>© 2015 SAAS <a href="#top">Top</a></p>
       </div>
     </footer>
 </body>
