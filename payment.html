@@ -41,36 +41,49 @@
   <div class="price pad-b-1-2 price">
   <h1 class="giga gutter pad-t-1-2">Payment Information</h1>
 
-  <form class="grid gutter">
+  <form action="https://formspree.io/jack0329@algonquinlive.com" method="post" class="grid gutter">
     <div class="unit xs-1 s-1 m-1-2 l-1-2">
       <div class="pad-t-1-2">First name</div>
-      <input type="text" name="firstname">
+      <input type="text" name="firstname" required>
 
-      <div class="pad-t-1-2">Last name</div>
-      <input type="text" name="lastname">
+      <div class="pad-t-1-2">
+        <label for="last-name">Last Name</label>
+        <input id="last-name" type="text" name="lastname" required>
+      </div>
 
-      <div class="pad-t-1-2">Email Address</div>
-      <input type="text" name="email address">
+      <div class="pad-t-1-2">
+        <label for="email">Email Address</label>
+        <input id="email" type="email" name="email" required placeholder="john.smith@outlook.com">
+      </div>
 
       <div class="pad-t-1-2">Confirm Email Address</div>
-      <input type="text" name="confirm email address">
+      <input type="text" name="confirm email address" required>
 
       <div class="pad-t-1-2">Password</div>
-      <input type="text" name="Password">
+      <input type="password" name="Password" required>
 
       <div class="pad-t-1-2">Confirm Password Number</div>
-      <input type="text" name="Confirm Password">
+      <input type="password" name="Confirm Password" required>
     </div>
 
     <div class="unit xs-1 s-1 m-1-2 l-1-2">
       <div class="pad-t-1-2">Phone Number</div>
-      <input type="text" name="Phone Number">
+      <input type="text" name="Phone Number" required placeholder="(123) 456-789">
 
-      <div class="pad-t-1-2">Plan Type</div>
-      <input type="text" name="Plan">
+    <div class="pad-t-1-2">
+      <label for="plan">Plan Type</label>
+      <select id="plan" required>
+        <option>Select Your Plan</option>
+        <option>Plan 1</option>
+        <option>Plan 2</option>
+        <option>Plan 3</option>
+      </select>
+    </div>
 
-      <div class="pad-t-1-2">Credit Card Number</div>
-      <input type="text" name="Credit Card Number">
+    <div class="pad-t-1-2">
+      <label for="credit-card">Credit Card Number</label>
+      <input id="credit-card" type="text" name="credit-card" required>
+    </div>
 
       <div class="pad-t-1-2">Expiry Date</div>
       <input type="text" name="Expiry Date">
@@ -78,8 +91,27 @@
       <div class="pad-t-1-2">Security Code</div>
       <input type="text" name="Security Code">
     <div>
+
+    <fieldset>
+      <legend>Would you like to recieve emails on deals and promotions</legend>
+
+      <input id="yes" type="radio" name="answer">
+      <label for="yes">Yes</label>
+
+      <input id="no" type="radio" name="answer">
+      <label for="no">No</label>
+
+    <div>
+      <label for="message">Message</label>
+      <textarea id="message"></textarea>
+    </div>
+
+    <div>
+      <button type="submit">Submit!</button>
+    </div>
   </form>
 </main>
+
 <footer class="grid grid-middle black">
   <div class="tour unit xs-1 s-1 m-1 l-1 island gutter">
     <div>
