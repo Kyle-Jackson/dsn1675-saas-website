@@ -26,7 +26,17 @@ header {
 }
 
 .tour {
-  background-color: #cccccc
+  background-color: #cccccc;
+}
+
+.prefooter {
+  background-color: #deb9b4;
+}
+
+.footer {
+  background-image: url("../images/wood.jpg");
+  background-size: cover;
+  background-color: #000;
 }
 
 .price {
@@ -58,6 +68,22 @@ a {
 
 a:focus {
   outline: 3px solid black;
+}
+
+button {
+  border: none;
+  border-radius: 3px;
+  background-color: #990000;
+  cursor: pointer;
+  color: white;
+}
+
+label {
+  display: block;
+}
+
+footer {
+  background: #deb9b4;
 }
 
 @media only screen and (min-width: 29em) {

@@ -22,16 +22,16 @@
 </ul>
 
   <header id="top" class="masthead grid grid-middle text-center white">
-      <div class="unit">
+    <div class="unit xs-1 text-right">
       <input type="checkbox" class="nav-check" id="nav-check">
     	<!-- This is the button we’d click to open/close the navigation -->
     	<label class="nav-label island-1-2" for="nav-check">Menu</label>
     	<nav class="nav" role="navigation">
-        <ul class="list-group text-left">
-          <li><a class="island-1-2 pad-b 1-2" href="index.html">Home</a></li>
-          <li><a class="island-1-2 pad-b 1-2" href="tour.html">Tour</a></li>
-          <li><a class="island-1-2" href="prices.html">Prices & Plans</a></li>
-          <li><a class="island-1-2" href="payment.html">Sign-Up</a></li>
+        <ul class="list-group text-right">
+          <li><a class="island-1-2 inline-block pad-b 1-2" href="index.html">Home</a></li>
+          <li><a class="island-1-2 inline-block pad-b 1-2" href="tour.html">Tour</a></li>
+          <li><a class="island-1-2 inline-block pad-b-1-2" href="prices.html">Prices & Plans</a></li>
+          <li><a class="island-1-2 inline-block pad-b-1-2" href="payment.html">Sign-Up</a></li>
         </ul>
     	</nav>
     </div>
@@ -56,19 +56,27 @@
         <input id="email" type="email" name="email" required placeholder="john.smith@outlook.com">
       </div>
 
-      <div class="pad-t-1-2">Confirm Email Address</div>
-      <input type="text" name="confirm email address" required>
+      <div class="pad-t-1-2">
+        <label for="email">Confirm Email Address</label>
+        <input id="confirm-email" type="email" name="confirm-email" required placeholder="john.smith@outlook.com">
+      </div>
 
-      <div class="pad-t-1-2">Password</div>
-      <input type="password" name="Password" required>
+      <div class="pad-t-1-2">
+        <label for="pasword">Password</label>
+        <input id="password" type="password" name="Password" required>
+      </div>
 
-      <div class="pad-t-1-2">Confirm Password Number</div>
-      <input type="password" name="Confirm Password" required>
+      <div class="pad-t-1-2">
+        <label for="confirm-pasword">Confirm Password</label>
+        <input id="confirm-password" type="password" name="Confirm-password" required>
+      </div>
     </div>
 
     <div class="unit xs-1 s-1 m-1-2 l-1-2">
-      <div class="pad-t-1-2">Phone Number</div>
-      <input type="text" name="Phone Number" required placeholder="(123) 456-789">
+    <div class="pad-t-1-2">
+      <label for="phone-number">Phone Number</label>
+      <input id="phone-number" type="text" name="Phone-number" required placeholder="(123) 456-789">
+    </div>
 
     <div class="pad-t-1-2">
       <label for="plan">Plan Type</label>
@@ -85,12 +93,15 @@
       <input id="credit-card" type="text" name="credit-card" required>
     </div>
 
-      <div class="pad-t-1-2">Expiry Date</div>
-      <input type="text" name="Expiry Date">
+    <div class="pad-t-1-2">
+      <label for="expiry-date">Expiry Date</label>
+      <input id="expiry-date" type="text" name="expiry-date" required>
+    </div>
 
-      <div class="pad-t-1-2">Security Code</div>
-      <input type="text" name="Security Code">
-    <div>
+    <div class="pad-t-1-2">
+      <label for="security-code">Security Code</label>
+      <input id="security-code" type="text" name="security-code" required>
+    </div>
 
     <fieldset>
       <legend>Would you like to recieve emails on deals and promotions</legend>
@@ -101,11 +112,6 @@
       <input id="no" type="radio" name="answer">
       <label for="no">No</label>
     </fieldset>
-    
-    <div>
-      <label for="message">Message</label>
-      <textarea id="message"></textarea>
-    </div>
 
     <div>
       <button type="submit">Submit!</button>
@@ -113,23 +119,13 @@
 
     <input type="hidden" name="_next"
       value="http://kyle-jackson.github.io/dsn1675-saas-website/thank-you.html">
-
+    </div>
   </form>
 </main>
 
-<footer class="grid grid-middle black">
-  <div class="tour unit xs-1 s-1 m-1 l-1 island gutter">
-    <div>
-      <h2 class="giga text-center">Sign Up Now</h2>
-      <p class="text-left">Sign up now and begin cooking today!</p>
-    </div>
-    <div class="text-center">
-      <a href="thank-you.html" aria-label="Sign-Up now and get cooking" class="btn white center">Get Cooking</a>
-    </div>
-  </div>
-  <div class="unit" role="contentinfo">
-    <p>© 2015 SAAS <a href="#top">Top</a></p>
-  </div>
+<div class="unit xs-1 text-center footer white island-1-2" role="contentinfo">
+  <p>© 2015 SAAS <a href="#top">Top</a></p>
+</div>
 </footer>
 </body>
 </html>
