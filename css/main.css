@@ -103,6 +103,11 @@ footer {
   width: 10%;
   height: auto;
 }
+
+.logo {
+  width: 25%;
+  height: auto;
+}
 @media only screen and (min-width: 29em) {
 
   .widthb {
@@ -110,7 +115,11 @@ footer {
   }
 
   .svg {
-    width: 7%;
+    width: 6%;
+  }
+
+  .logo {
+    width: 14%;
   }
 
 }
@@ -121,6 +130,10 @@ footer {
     width: 25em;
   }
 
+  .svg {
+    width: 5%;
+  }
+
 }
 
 @media only screen and (min-width: 50em) {
@@ -128,6 +141,15 @@ footer {
   .widthb {
     width: 40em;
   }
+
+  .logo {
+    width: 9%;
+  }
+
+  .svg {
+    width: 4%;
+  }
+
 
 @media only screen and (min-width: 62em) {
 
@@ -141,6 +163,10 @@ footer {
 
   p {
     padding: 0 5em;
+  }
+
+  .logo {
+    width: 7%;
   }
 
 }
