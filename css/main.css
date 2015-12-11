@@ -108,6 +108,14 @@ footer {
   width: 25%;
   height: auto;
 }
+
+fieldset {
+  border: none;
+}
+
+.btn-submit {
+  width: 100%;
+}
 @media only screen and (min-width: 29em) {
 
   .widthb {
